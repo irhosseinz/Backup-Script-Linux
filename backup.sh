@@ -27,7 +27,7 @@ FILESIZE=$(stat -c%s "$SAVEPATH")
 echo "file created. size:$FILESIZE"
 upload_ftp $SAVEPATH "$APP/$FILE"
 
-#backup sql satabase
+#backup mysql satabase
 FILE="$APP.DB_$DATE.sql.gz"
 SAVEPATH="backups/$FILE"
 echo "creating backup file $SAVEPATH for db"
