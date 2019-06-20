@@ -1,11 +1,3 @@
-Skip to content
- irhosseinz / MANAGER
-Code  Issues 0  Pull requests 0  Projects 0  Security
-MANAGER/backup.sh
- root first commit
-a26a934 2 days ago
-44 lines (37 sloc)  1.37 KB
-  
 #!/bin/bash
 APP="Project name"
 
@@ -47,15 +39,3 @@ upload_ftp $SAVEPATH "$APP/$FILE"
 #clear old files
 find backups -type f -iname "*.tar.gz" -mtime +3 -exec rm {} \;
 find backups -type f -iname "*.sql.gz" -mtime +3 -exec rm {} \;
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
